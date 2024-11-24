@@ -20,7 +20,8 @@ COPY solution.py /home/valley/solution.py
 RUN gcc -g -o /home/valley/valley /home/valley/valley.c
 
 RUN chmod 400 /home/valley/flag.txt
-RUN chmod 755 /home/valley/valley
+
+#RUN chmod 755 /home/valley/valley
 RUN chmod 755 /home/valley/valley.c
 RUN chmod 777 /home/valley/solution.py
 
