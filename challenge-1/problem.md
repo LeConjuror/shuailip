@@ -4,7 +4,7 @@
 - ID: echo-valley
 - Type: custom
 - Category: Binary Exploitation
-- Points: 1
+- Points: 200
 - Templatable: no
 - MaxUsers: 1
 
