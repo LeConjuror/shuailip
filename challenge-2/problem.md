@@ -4,7 +4,7 @@
 - ID: redredredred
 - Type: custom
 - Category: Reverse Engineering
-- Points: 1
+- Points: 40
 - Templatable: no
 - MaxUsers: 1
 
